@@ -6,8 +6,6 @@ from tensorflow.keras.models import load_model
 
 # ================= LOAD MODEL =================
 model = load_model("plant_disease_model.h5")
-
-# ================= LOAD DISEASE CLASSES =================
 DATASET_DIR = "PlantVillage"
 disease_classes = sorted([
     d for d in os.listdir(DATASET_DIR)
@@ -105,3 +103,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+
